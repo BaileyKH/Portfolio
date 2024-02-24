@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link href="style.css" rel="stylesheet">
+    <style>
+         body {
+            background-image: url('./assets/contact-background.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto; 
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -17,15 +27,36 @@
             <a href="contact.html">Contact Me</a>
         </div>
     </nav>
-    <form class="form-container">
-        <h2>Contact Me</h2>
-        <label for="nameInput">Name</label>
-        <input id="nameInput" type="text" placeholder="Name"/><br><br>
-        <label for="emailInput">Email</label>
-        <input id="emailInput" type="email" placeholder="Email"/><br><br>
-        <textarea id="messageInput" name="message" rows="15" cols="50">
-            Message
-        </textarea>
-    </form>
+    <div class="form-body">
+        <div class="form-wrapper">
+            <form action="">
+                <h1>Contact Me</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="First Name" required/>
+                    <i class="fa-solid fa-user" style="color: #e0003c;"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Last Name" required/>
+                    <i class="fa-solid fa-user" style="color: #e0003c;"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required/>
+                    <i class="fa-solid fa-envelope" style="color: #e0003c;"></i>
+                </div>
+                <div class="input-box">
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Message"></textarea>
+                    <i class="fa-solid fa-message" style="color: #e0003c;"></i>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 BaileyKH. All rights reserved.<br>
+        Email: hen.baileyk@gmail.com
+        <i class="fa-brands fa-github"></i>
+    </footer>
+    <script src="https://kit.fontawesome.com/55f1a2bf94.js" crossorigin="anonymous"></script>
 </body>
 </html>
