@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 6%);
+    color: white;
+    font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+    font-family: "Rubik", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background-color: hsl(0, 0%, 10%);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 5px 5px 0 hsla(0, 0%, 4%, 0.7);
+}
+
+.logo {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex;
+    gap: 45px;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    list-style: none;
+}
+
+.nav-items a{
+    transition: color 0.3s ease-in-out;
+
+}
+
+.nav-items a:hover {
+    color: hsl(344, 100%, 44%);
+    border-radius: 5px;
+    transform: scale(110%);
+    -webkit-font-smooth: subpixel-antialiased;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10rem 5rem 1.1rem 5rem;
+    line-height: 2;
+}
+
+.bailey span, .logo span{
+    color: hsl(344, 100%, 44%);
+}
+
+.bailey{
+    width: 50%;
+}
+
+.bailey h1{
+    font-size: 5em;
+}
+
+.bailey p{
+    font-size: 1.1em;
+}
+
+
+.bailey button{
+    background-color: hsl(344, 100%, 44%);
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 35px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.profile-pic img{
+    border: 2px solid hsl(344, 100%, 44%);
+    border-radius: 100px;
+    width: 50vh;
+    height: auto;
+}
+
+.form-container{
+    display: inline-block;
+    text-align: center;
+    border: solid 2px hsl(344, 100%, 44%);
+    border-radius: 20px;
+    padding: ;
+}
